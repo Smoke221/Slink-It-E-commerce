@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Needs Online | Smart Mart</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+
+<body>
+    <div class="top-section">
+        <header>
+            <div class="menubutton"></div>
+            <div class="logo">
+                <a href="#">
+                    <ion-icon class="menu-icon" name="menu"></ion-icon>
+                </a>
+                JioMart
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search essentials,grocieries, and more ...">
+            </div>
+            <div class="loginin"> <a href="login.html">
+                    <a href="#">
+                        <ion-icon name="person"></ion-icon>
+                    </a>
+                </a> Sign in / Sign up
+            </div>
+            <div class="mini-cart">
+                <a href="#">
+                    <ion-icon name="cart"></ion-icon>
+                </a>
+                Cart
+            </div>
+        </header>
+        <div class="category-section">
+            <ul class="nav-menu">
+                <li id="dropdown" class="cn-menu"><a href="Grocery.html"> Groceries</a>
+                    <ion-icon name="chevron-down"></ion-icon>
+                    <div class="dropdown-menu">
+                        <a href="">Fruits & Vegetables</a>
+                        <a href="">Dairy & Bakery</a>
+                        <a href="">Staples</a>
+                    </div>
+                </li>
+                <li class="cn-menu"><a href="#">Premium Fruits</a>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </li>
+                <li class="cn-menu"><a href="#">Home & Kitchen</a>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </li>
+                <li class="cn-menu"><a href="#">Fashion</a>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </li>
+                <li class="cn-menu"><a href="#">Electronics</a>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </li>
+                <li class="cn-menu"><a href="#">Beauty</a>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </li>
+                <li class="cn-menu"><a href="#">Home Improvement</a>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="slide-top">
+        <div class="pre-btn">
+            <!-- <a href="#">
+                <ion-icon style="color: black;" name="chevron-back"></ion-icon>
+            </a> -->
+            <div class="image-container">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="img1.jpg"></div>
+                        <div class="swiper-slide"><img src="img2.jpg"></div>
+                        <div class="swiper-slide"><img src="img3.jpg"></div>
+                        <div class="swiper-slide"><img src="img4.jpg"></div>
+                    </div>
+                    <div style="color: white ;" class="swiper-pagination"></div>
+                    <div style="color: gray;" class="swiper-button-prev"></div>
+                    <div style="color: gray;" class="swiper-button-next"></div>
+                </div>
+            </div>
+            <!-- <a href="#">
+                <ion-icon style="color: black;" name="chevron-forward"></ion-icon>
+            </a> -->
+        </div>
+    </div>
+    <div class="fixed">
+        <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1667281294_bLOCK_BUSTER_dEALS_1_Desktop.jpg"
+            alt="">
+        <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1662531217_Wednesday_Bonus.jpg" alt="">
+    </div>
+    <div class="offers-slide">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div  class="swiper-slide"><img src="p_img1.jpg"></div>
+                <div class="swiper-slide"><img src="p_img2.jpg"></div>
+                <div class="swiper-slide"><img src="p_img3.jpg"></div>
+                <div class="swiper-slide"><img src="p_img4.jpg"></div>
+            </div>
+        </div>
+    </div>
+    <div class="fixed">
+        <img src="https://www.jiomart.com/images/cms/aw_rbslider/slides/1667239568_1665072912_Oct-6_Slim-Banner.jpg" alt="">
+    </div>
+    <script>
+        const swiper = new Swiper('.swiper', {
+        loop: true,
+
+        autoplay: {
+            delay:3000
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+    </script>
+</body>
+
+</html>
+<script src="index.js"></script>
