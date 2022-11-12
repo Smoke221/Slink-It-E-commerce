@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>My Cart | SLINK it home</title>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Needs Online | Smart Mart</title>
+    <link rel="stylesheet" href="cart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+
+<body>
+    <div class="top-section">
+        <header>
+            <div class="menubutton"></div>
+            <div class="logo">
+                <a href="#">
+                    <ion-icon class="menu-icon" name="menu"></ion-icon>
+                </a>
+                <a class="redirect" href="index.html">JioMart</a>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="Search essentials,grocieries, and more ...">
+            </div>
+            <div class="loginin"> <a href="signup.html">
+                    <a href="signup.html">
+                        <ion-icon name="person"></ion-icon>
+                    </a>
+                </a> Sign in / Sign up
+            </div>
+            <div class="mini-cart">
+                <a class="fafa" href="#">
+                    <ion-icon name="cart"></ion-icon>
+                </a>
+                Cart
+            </div>
+            <div class="select">
+
+            </div>
+        </header>
+        <div class="category-section">
+            <ul class="nav-menu">
+                <li class="cn-menu"><a href="#">Groceries</a>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </li>
+                <li class="cn-menu"><a href="#">Premium Fruits</a>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </li>
+                <li class="cn-menu"><a href="#">Home & Kitchen</a>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </li>
+                <li class="cn-menu"><a href="#">Fashion</a>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </li>
+                <li class="cn-menu"><a href="#">Electronics</a>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </li>
+                <li class="cn-menu"><a href="#">Beauty</a>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </li>
+                <li class="cn-menu"><a href="#">Home Improvement</a>
+                    <ion-icon name="chevron-down"></ion-icon>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="cart-container">
+        <div class="cart-items">
+            <h3>Your Basket</h3>
+            <p>Offers</p>
+        </div>
+        <div class="pay-amount">
+            <div class="pay-details">
+                <div class="payment">
+                    <h3>Payment Details</h3>
+                </div>
+                <div class="payment">
+                    <p>MRP Total</p> <span class="total-mrp"></span>
+                </div>
+                <hr>
+                <div class="payment">
+                    <p>Product Discount </p><span class="total-discount"></span>
+                </div>
+                <hr>
+                <div class="payment">
+                    <h5>Total Amount</h5> <span class="final-amount"></span>
+                </div>
+            </div>
+            <button class="order-button">Place Order</button>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="cart.js"></script>
