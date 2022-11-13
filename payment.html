@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLINK | Payment Gateway</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+</head>
+<style>
+    *{
+        font-family: 'Lato', sans-serif;
+    }
+    .offers {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+        border-radius: 5px;
+        width: 70%;
+
+    }
+    .offers-section{
+        color: gray;
+        width: 50%;
+        margin-left: 5%;
+    }
+    h1{
+        text-align: center;
+        margin-top: 10%;
+    }
+    hr{
+        width: 100%;
+        margin-right: 10%;
+    }
+    .diff-container{
+        box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-left: 30%;
+        margin-top: 5%;
+        gap: 10%;
+    }
+    .diff-container>div{
+        margin-left: 10%;
+    }
+    .diff-container>h3{
+        margin-left: 10%;
+        color: gray;
+        font-size: 15px;
+    }
+    .wallet, .other-payments{
+        box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+        border-radius: 5px;
+    }
+    .wallet{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        width: 70%;
+        font-size: 13px;
+    }
+    .other-payments{
+        width: 70%;
+    }
+    .wallet>h3,p{
+        margin-left: 10%;
+    }
+    .wallet>h3{
+        color: gray;
+    }
+    .other-payments>h3{
+        margin-left: 5%;
+        font-size: 13px;
+        color: gray;
+    }
+    
+</style>
+
+<body>
+    <div class="diff-container">
+        <h3>AMOUNT PAYABLE</h3>
+        <p id="amount-to-pay"></p>
+        <div class="offers">
+            
+            <p></p>
+            <div class="offers-section">
+                <img width="10%" src="https://jep-asset.akamaized.net/MyJio_Client/corefiles/jpg/wallet/simpl.svg"
+                    alt=""><p>5% cashback on first ever transaction through Simpl upto Rs. 700</p> 
+            </div> <br>
+            <div class="offers-section">
+                <img width="10%" src="https://jep-asset.akamaized.net/MyJio_Client/corefiles/jpg/paytm_offer_logo.svg"
+                    alt=""><p>Get Up to Rs. 900 Cashback on a minimum purchase amount of Rs. 750</p>
+            </div><br>
+            <div class="offers-section">
+                <img width="13%" src="https://jep-asset.akamaized.net/MyJio_Client/corefiles/jpg/offer/AUBank.jpeg"
+                    alt=""><p>10% Cashback Up to Rs. 500/- on AU Bank Debit & Credit Cards on Min. single bill value of Rs. 500</p>
+            </div>
+        </div>
+        <div class="wallet">
+            <h3>SLINK WALLET</h3>
+            <p>Wallet, SOne,GiftCard...</p>
+        </div>
+        <div class="other-payments">
+            <h3>CREDIT/DEBIT CARDS</h3> <hr>
+            <h3>NET BANKING</h3> <hr>
+            <h3>WALLETS</h3> <hr>
+            <h3>PAY LATER</h3><hr>
+            <h3>PAY WITH REWARD POINTS</h3><hr>
+            <h3>CASH ON DELIVERY</h3>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+   let amountPayable = localStorage.getItem("amount-payable") || 0;
+   document.getElementById("amount-to-pay").innerText = amountPayable
+   console.log(amountPayable)
+</script>

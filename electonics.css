@@ -1,0 +1,191 @@
+*{
+    font-family: 'Lato', sans-serif;
+}
+.redirect {
+    color: white;
+}
+.top-section header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    background-color: rgba(74, 109, 223, 0.959);
+    height: 4rem;
+}
+.logo {
+    font-size: 2rem;
+    color: white;
+    font-weight: bolder;
+}
+
+.search>input {
+    width: 30rem;
+    height: 2rem;
+    border-radius: 4px;
+    border: 0px;
+}
+
+.loginin,
+.mini-cart {
+    font-size: 15px;
+    color: white;
+}
+
+.mini-cart {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+}
+
+.menu-icon {
+    font-size: 40px;
+    padding-top: 0.7rem;
+}
+
+header ion-icon {
+    color: white;
+    font-size: 20px;
+}
+
+.loginin {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10%;
+}
+
+li {
+    list-style-type: none;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 10px 10px;
+    margin-top: 0px;
+}
+
+.category-section {
+    background-color: rgba(192, 192, 192, 0.371);
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.cn-menu {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.cn-menu ion-icon {
+    color: gray;
+}
+
+.cate-products {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.cate-noting {
+    display: flex;
+    gap: 3%;
+    align-items: center;
+    color: gray;
+}
+
+.cate-noting:hover {
+    color: black;
+}
+
+.side-bar {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(20,1fr);
+    gap: 5rem;
+    margin-left: 5%;
+}
+
+.category-sidebar, .filters-sidebar {
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    border-radius: 3px;
+    width: 250%;
+    padding-left: 5%;
+}
+img {
+    width: 75rem;
+}
+
+.grocery-items {
+    margin-top: 1%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 1.3rem;
+    width: 90%;
+}
+.products{
+    margin-left: 10%;
+}
+
+.grocery-items>div {
+    border-radius: 7px;
+    padding: 5%;
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.301) 0px 0px 0px 1px;
+}
+
+.groc-btn {
+    margin-bottom: 7%;
+    width: 100%;
+    height: 10%;
+    margin-bottom: 5%;
+    border: 0px;
+    background-color: rgba(74, 109, 223, 0.959);
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+}
+.prod-content img {
+    width: 190px;
+    margin-left: 10%;
+}
+.noofprods{
+    margin-top: 2%;
+}
+.filter-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.filters{
+    display: flex;
+    align-items: center;
+    gap: 10%;
+    margin-right: 10%;
+}
+.search-input{
+    width: 100%;
+}
+.filters-sidebar>p{
+    color: gray;
+}
+.groc-btn:hover{
+    background-color: rgb(30, 30, 218);
+}
