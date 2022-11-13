@@ -116,12 +116,13 @@ a:link {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(20,1fr);
     gap: 5rem;
+    margin-left: 5%;
 }
 
 .category-sidebar, .filters-sidebar {
     box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
     border-radius: 3px;
-    width: 150%;
+    width: 250%;
     padding-left: 5%;
 }
 img {
@@ -134,6 +135,10 @@ img {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
     gap: 1.3rem;
+    width: 90%;
+}
+.products{
+    margin-left: 10%;
 }
 
 .grocery-items>div {

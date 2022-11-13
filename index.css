@@ -10,13 +10,6 @@
     background-color: rgba(74, 109, 223, 0.959);
     height: 4rem;
 }
-
-.logo {
-    font-size: 2rem;
-    color: white;
-    font-weight: bolder;
-}
-
 .search>input {
     width: 30rem;
     height: 2rem;
@@ -41,7 +34,7 @@
     padding-top: 0.7rem;
 }
 
- header ion-icon {
+header ion-icon {
     color: white;
     font-size: 20px;
 }
@@ -55,6 +48,12 @@
     display: flex;
     align-items: center;
     gap: 10%;
+    font-size: 2rem;
+    color: white;
+    font-weight: bolder;
+}
+.redirect{
+    color: white;
 }
 
 li {
@@ -65,7 +64,8 @@ a:link {
     text-decoration: none;
     color: black;
 }
-.nav-menu{
+
+.nav-menu {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,17 +73,20 @@ a:link {
     padding: 10px 10px;
     margin-top: 0px;
 }
-.category-section{
+
+.category-section {
     background-color: rgba(192, 192, 192, 0.371);
     font-size: 16px;
-    font-family: 'Lato', sans-serif;
+    font-family: sans-serif;
 }
-.cn-menu{
+
+.cn-menu {
     display: flex;
     align-items: center;
     gap: 8px;
 }
-.cn-menu ion-icon{
+
+.cn-menu ion-icon {
     color: gray;
 }
 /* .cn-menu ion-icon:hover{
@@ -143,4 +146,35 @@ a:link {
     color: gray;
     font-size: 11px;
     text-align: start;
+}
+.index-addcart{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 8px;
+    margin: 2% 2% ;
+    margin-left: 24%;
+    width: 50%;
+    text-align: center;
+    padding: 0 2%;
+    display: flex;
+    justify-content: start;
+    gap: 20%;
+}
+.swiper-slide>button{
+    margin-bottom: 20%;
+    border-radius: 5px;
+    background-color: rgba(74, 109, 223, 0.959);
+    border: 0px;
+    width: 100%;
+    height: 20%;
+    color: white;
+    font-size: 16px;
+}
+.index-addcart img{
+    margin-top: 10%;   
+}
+.swiper-slide>p+p{
+    color: green;
+}
+.swiper-slide>button:hover{
+    background-color: blue;
 }
