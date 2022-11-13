@@ -1,7 +1,7 @@
 let bag = [];
 let count = 0;
 let cartItems = JSON.parse(localStorage.getItem("cartproducts")) || [];
-fetch("https://6369e566c07d8f936d8de18f.mockapi.io/products")
+fetch("https://6369e566c07d8f936d8de18f.mockapi.io/electronics")
     .then((fromResolve) => fromResolve.json())
     .then((data) => {
         bag = data;
