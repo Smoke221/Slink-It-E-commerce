@@ -63,16 +63,30 @@ function search() {
 }
 
 function handleSort() {
-    let selected = document.querySelector("select").value
-    if (selected == "HTL") {   //compare with value
-        bag.sort((a, b) => b.price - a.price)
+    let selected = document.querySelector("select").value;
+  
+    if (selected === "HTL") {
+      bag.sort((a, b) => b.price - a.price);
+    } else if (selected === "LTH") {
+      bag.sort((a, b) => a.price - b.price);
+    } else if (selected === "AZ") {
+      bag.sort((a, b) => {
+        if (a.name && b.name) {
+          return a.name.localeCompare(b.name);
+        }
+        return 0;
+      });
+    } else if (selected === "ZA") {
+      bag.sort((a, b) => {
+        if (a.name && b.name) {
+          return b.name.localeCompare(a.name);
+        }
+        return 0;
+      });
     }
-    if (selected == "LTH") {
-        bag.sort((a, b) => a.price - b.price)
-    }
-    //console.log(bag)
-    displayCard(bag)
-}
+  
+    displayCard(bag);
+  }
 
 
 // let noti = document.querySelector(".fafa");
