@@ -35,7 +35,10 @@ btn.addEventListener("click", e => {
     e.preventDefault();
     validateInputs();
     signup();
+<<<<<<< HEAD
     window.location.href="signup.html"
+=======
+>>>>>>> 74d692e99490bc6bd9a618487ccfbbbb93edba9f
 });
 let setError = (element, message) => {
     let inputControl = element.parentElement
